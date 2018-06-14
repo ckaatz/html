@@ -1,0 +1,123 @@
+body {
+	background-color: #FAEBD7;
+	font-size: 18px;
+	font-family: Impact, Charcoal, sans-serif;
+	line-height: 1em;
+	font-weight: bold;
+	color: purple;
+}
+
+h1, h3 {
+	text-align: center;
+}
+
+.container {
+	border: 3px outset green;
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: baseline;
+	align-content: space-between;
+	background-color: #F0E68C;
+	border-radius: 8px;
+}
+
+.menu {
+	border: 1px solid green;
+	background-color: #DEB887;
+	border-radius: 8px;
+}
+
+button {
+	border-radius: 12px;
+	background-color: #e7e7e7;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	width: 100%;
+}
+
+button {
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+#cart {
+	opacity: 0;
+	margin: 15px auto;
+	width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+	background-color: rgba(244, 245, 247, 0.9);
+	border: 2px solid #080054;
+	box-shadow: 0 0 0 3px rgba(255,255,255, .8);
+	border-radius: 25px;
+}
+
+#title1 {
+	color: #fff;
+	flex: 1 250px;
+	height: 50px;
+	width: 250px;
+	padding: 0 0 0px 10px;
+	background-color: rgba(42, 76, 132, .8);
+	border-radius: 25px 0 0 0;
+	text-shadow: 1.5px 1.5px 5px #00f, 1px 1px 5px #000;
+}
+
+#title2 {
+	color: #fff;
+	flex: 1 250px;
+	height: 50px;
+	width: 250px;
+	padding: 0 0 0px 10px;
+	background-color: rgba(42, 76, 132, .8);
+	border-radius: 0 25px 0 0;
+	text-shadow: 1.5px 1.5px 5px #00f, 1px 1px 5px #000;
+}
+
+#showText1 {
+	font-size: 13px;
+	flex: 1 250px;
+	padding: 1px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#showText2 {
+	font-size: 13px;
+	flex: 1 250px;
+	padding: 1px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#totalPrice1 {
+	flex: 1 250px;
+	padding: 0 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
+
+#totalPrice2 {
+	flex: 1 250px;
+	font-weight: bold;
+	padding: 20px 0 10px 10px;
+	width: 250px;
+	border-radius: 0 0 0 0;
+}
