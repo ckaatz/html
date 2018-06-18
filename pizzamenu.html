@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta content="width=device-width,initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="./css/pizza_style2.css">
+    <title>Order A Pizza!</title>
+  </head>
+  <body>
+    <h1>Welcome to our Pizza Place!</h1>
+	<p><h3>Use below options to order your pizza!</h3></p>
+	<div class="container">
+		<!-- Size Selection -->
+		<div>
+			<p>Choose a Size:</p>
+			<form class="menu">
+				<input type="radio" class="size" name="size" value="Personal" checked>Personal<br>
+				<input type="radio" class="size" name="size" value="Medium">Medium<br>
+				<input type="radio" class="size" name="size" value="Large">Large<br>
+				<input type="radio" class="size" name="size" value="Extra Large">Extra Large<br>
+			</form>
+		</div>
+		<!-- Meats Selection -->
+		<div>
+			<p class="Option">Any Meat:</p>
+			<form class="menu">
+				<input type="checkbox" class="meats" name="meats" value="Pepperoni">Pepperoni<br>
+				<input type="checkbox" class="meats" name="meats" value="Sausage">Sausage<br>
+				<input type="checkbox" class="meats" name="meats" value="Canadian Bacon">Canadian Bacon<br>
+				<input type="checkbox" class="meats" name="meats" value="Ground Beef">Ground Beef<br>
+				<input type="checkbox" class="meats" name="meats" value="Anchovy">Anchovy<br>
+				<input type="checkbox" class="meats" name="meats" value="Chicken">Chicken<br>
+			</form>
+		</div>
+		<!-- Cheese Selection -->
+		<div>
+			<p>Cheese:</p>
+			<form class="menu">
+				<input type="radio" class="cheese" name="cheese" value="Regular" checked>Regular<br>
+				<input type="radio" class="cheese" name="cheese" value="No Cheese">No Cheese<br>
+				<input type="radio" class="cheese" name="cheese" value="Extra Cheese">Extra Cheese<br>
+			</form>
+		</div>
+		<!-- Crust Selection -->
+		<div>
+			<p>Choose the Crust:</p>
+			<form class="menu">
+				<input type="radio" class="crust" name="crust" value="Plain" checked>Plain Crust<br>
+				<input type="radio" class="crust" name="crust" value="Garlic Butter">Garlic Butter Crust<br>
+				<input type="radio" class="crust" name="crust" value="Stuffed Cheese">Stuffed Cheese Crust<br>
+				<input type="radio" class="crust" name="crust" value="Spicy">Spicy Crust<br>
+				<input type="radio" class="crust" name="crust" value="House Special">House Special Crust<br>
+			</form>
+		</div>
+		<!-- Sauce Selection -->
+		<div>
+			<p>Choose the Sauce:</p>
+			<form class="menu">
+				<input type="radio" class="sauce" name="sauce" value="Marinara" checked>Marinara<br>
+				<input type="radio" class="sauce" name="sauce" value="White">White<br>
+				<input type="radio" class="sauce" name="sauce" value="BBQ">Barbeque<br>
+				<input type="radio" class="sauce" name="sauce" value="None">No Sauce<br>
+			</form>
+		</div>
+		<!-- Veggies Selection -->
+		<div>
+			<p>Any Veggies:</p>
+			<form class="menu">
+				<input type="checkbox" class="veggies" name="veggies" value="Tomatoes">Tomatoes<br>
+				<input type="checkbox" class="veggies" name="veggies" value="Onions">Onions<br>
+				<input type="checkbox" class="veggies" name="veggies" value="Olives">Olives<br>
+				<input type="checkbox" class="veggies" name="veggies" value="GreenPeppers">Green Peppers<br>
+				<input type="checkbox" class="veggies" name="veggies" value="Mushrooms">Mushrooms<br>
+				<input type="checkbox" class="veggies" name="veggies" value="Pineapple">Pineapple<br>
+				<input type="checkbox" class="veggies" name="veggies" value="Spinach">Spinach<br>
+				<input type="checkbox" class="veggies" name="veggies" value="Jalapeno">Jalapeno<br>
+			</form>
+		</div>
+	</div>
+	<div>
+		<br>
+		<button type="button" onclick="getReceipt()">Place Order</button>
+		<div id="cart">
+			<div id="title1"><h3>You Ordered:</h3></div>
+			<div id="showText1"></div>
+			<div id="showText2"></div>
+			<div id="totalPrice1"><h3>Total Price:</h3></div>
+			<div id="totalPrice2"></div>
+		</div>
+	</div>
+	<script src="PizzaFunction2.js"></script>
+  </body>
+</html>
